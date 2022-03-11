@@ -1,0 +1,20 @@
+-->  yum install git -y
+-->  git --version
+-->  git clone https://bitbucket.org/vikas99341/aws-php-app-beanstalk.git
+-->  mv aws-php-app-beanstalk aws-project
+-->  cd aws-project/
+-->  git log --oneline
+-->  git checkout 9d5bdd3
+-->  git archive --format=zip HEAD > Helloworld.zip
+-->  aws s3 mb s3://php-project-morning-2022
+-->  aws s3 cp Helloworld.zip s3://php-project-morning-2022
+-->  rm -rf Helloworld.zip
+-->  git checkout master
+-->  git log --oneline
+-->  git checkout 5ea9332
+-->  aws s3 cp aws-icon.png s3://php-project-morning-2022
+-->  git archive --format=zip HEAD > multi-tier.zip
+-->  aws s3 cp multi-tier.zip s3://php-project-morning-2022
+-->  rm -rf multi-tier.zip
+-->  cat rds.php
+-->  cat s3_image.php
